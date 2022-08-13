@@ -9,9 +9,11 @@ public class SnakeAndLadder {
     static final int GET_SNAKE = 2;
     static final int STARTING_POINT = 0;
     static final int WINNING_POINT = 100;
+    static int dieNumber;
+    static int player1OldPosition;
     public static int rollDie(){
         System.out.println("Please roll a die");
-        int dieNumber = (int)(Math.random() * 10 % 6) + 1;
+        dieNumber = (int)(Math.random() * 10 % 6) + 1;
         System.out.println("You get : " +dieNumber);
         return dieNumber;
     }
@@ -42,18 +44,18 @@ public class SnakeAndLadder {
                     else
                         player1Position = player1Position - dieNumber;
                     break;
-            }
-            if(player1Position >= WINNING_POINT){
-                System.out.println("Position of player 1 : " +(player1Position = WINNING_POINT));
-                System.out.println("Player 1 won the game !!");
-                System.out.println("Congrats player 1!!!");
+                }
+            if(player1Position > WINNING_POINT){
+                player1Position = player1OldPosition;
+            if(player1Position == WINNING_POINT) {
+                System.out.println("Position of player 1 : " + (player1Position = WINNING_POINT));
+                }
             }
             System.out.println("Position of Player 1 : " +player1Position);
             System.out.println("------------");
+            System.out.println("Player 1 won the game !!");
+            System.out.println("Congrats player 1!!!");
         }
-//        if(player1Position == WINNING_POINT){
-//            System.out.println("Player 1 won the game !!");
-//            System.out.println("Congrats player 1!!!");
-//        }
     }
 }
+

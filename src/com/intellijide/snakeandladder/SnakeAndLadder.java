@@ -54,9 +54,12 @@ public class SnakeAndLadder {
             }
             System.out.println("Position of Player 1 : " +player1Position);
             System.out.println("------------");
-            System.out.println("Player 1 won the game !!");
-            System.out.println("Congrats player 1!!!");
         }
+        System.out.println("Position of Player 1 : " +player1Position);
+        System.out.println("------------");
+        System.out.println("Player 1 won the game !!");
+        System.out.println("Congrats player 1!!!");
+        System.out.println("------------");
     }
 }
 

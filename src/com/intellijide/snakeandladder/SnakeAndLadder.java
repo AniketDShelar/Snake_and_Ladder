@@ -60,6 +60,7 @@ public class SnakeAndLadder {
         System.out.println("Player 1 won the game !!");
         System.out.println("Congrats player 1!!!");
         System.out.println("------------");
+        System.out.print("Number of times the dice was played to won the game : " +diceCount);
     }
 }
 

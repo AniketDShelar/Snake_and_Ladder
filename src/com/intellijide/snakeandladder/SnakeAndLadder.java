@@ -45,6 +45,7 @@ public class SnakeAndLadder {
                         player1Position = player1Position - dieNumber;
                     break;
                 }
+            player1OldPosition = player1Position - dieNumber;
             if(player1Position > WINNING_POINT){
                 player1Position = player1OldPosition;
             if(player1Position == WINNING_POINT) {
